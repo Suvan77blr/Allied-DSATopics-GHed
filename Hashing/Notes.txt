@@ -1,0 +1,40 @@
+
+2602250200
+
+* Hashing - prestore something and fetch it when required.
+
+* number hashing : 
+    - in the main : 10^7 is the max size.
+    - in global space : 10^8 is the max size.
+
+* character hashing : 
+    - hashArr[ch - 'a'] : lowercase only. => hashArr has 26 size.
+    - hashArr[ch - 'A'] : uppercase only.
+    - hashArr[ch] : all possible ASCII characters. => hashArr has all 256 character count.
+        ch will auto-cast itself to its ASCII code.
+
+
+* STL -> map, unordered_map.
+* Collections -> HashMap.
+
+
+* Map -
+    => O(logN)
+    - Stores all elements in sorted order.
+
+* Unordered Map -
+    => O(1) Best,Avg (OR) O(N) Worst Case.
+
+
+-> Hashing :-
+Three methods of implementation -
+    
+    * Division Method => modulus of some size if used.
+        - Collision => linear chaining of values which get the same 'mod'.
+
+    * Folding Method
+    * Mid Square Method
+
+* Datatypes for the key :
+    - UMP supports only int, double, char & string.
+    - Map supports any datatypes. Those which are nested or comprising of STL containers too.
